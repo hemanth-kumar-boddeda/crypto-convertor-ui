@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* overflow: hidden; */;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #242d32;
+  color: #e6f7fd;
+  font-family: "Inter", sans-serif;
+  overflow-y: auto;
+}
+
+.slippage{
+  background-color: #2e3a41;
+  border-radius: 0.5rem;
+  padding: 0.125rem 0.25rem;
+  border:0.25rem solid transparent;
+  cursor: pointer;
+}
+
+.slippage.active{
+  background-color: #00ACE6;
+}
+
+nav a.active {
+  background-color: #3a4247;
+  color: #54c7ee;
+}
+
+.btn {
+  color: white;
+  background-color: #00ACE6;
+  padding: 0.5rem 1rem;
+  border-radius: 0.1rem;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  width: max-content;
+}
+
+.btn1 {
+  width: max-content;
+  background-color: transparent;
+  border-radius: 0.25rem;
+  border: 1px solid #c4c0c8;
+  padding: 0.5rem 2rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn1:hover {
+  background-color: #00ACE6;
+  border: 1px solid transparent;
+}
+
+.btn:hover {
+  background-color: #242d32;
+  border: 1px solid #c4c0c8;
+}
+
+.navbar.active {
+  transform: translateX(0);
+}
+
+.navbar.active~.black {
+  transform: translateX(0)
+}
+
+.fixed{
+  position: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 12px;
+  background-color: #2e2e2e;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #334047;
+  border-radius: 6px;
+  border: 3px solid #2f2f2f;
+  transition: background-color 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1c2327;
+}
